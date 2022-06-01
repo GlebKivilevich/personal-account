@@ -6,7 +6,7 @@ const monthName = ['январь','февраль','март','апрель','м
     daysContainer = document.querySelector('.days'),
     next = document.querySelector('.next'),
     prev = document.querySelector('.prev');
-    
+
 let nowDate = new Date(),
     nowDateNumber = nowDate.getDate(),
     nowMonth = nowDate.getMonth(),
@@ -26,7 +26,7 @@ function setMonthCalendar(year,month) {
         monthPrefix = new Date(year, month, 0).getDay(),
         monthDaysText = '';
         monthDaysText.toUpperCase();
-    
+
 
     monthContainer.textContent = monthName[month];
     yearContainer.textContent = year;
@@ -66,9 +66,9 @@ function setMonthCalendar(year,month) {
             </li>
             `;
         }             
-        
+
     }
-    
+
 
     daysContainer.innerHTML = monthDaysText;
 
@@ -87,11 +87,11 @@ prev.addEventListener("click", () => {
 
     let curYear = curDate.getFullYear(),
         curMonth = curDate.getMonth();
-    
+
     dayInfo = [];
-    
+
     setMonthCalendar(curYear,curMonth);
-    
+
 });
 
 next.addEventListener("click", () => {
@@ -101,11 +101,11 @@ next.addEventListener("click", () => {
 
     let curYear = curDate.getFullYear(),
         curMonth = curDate.getMonth();
-    
+
     dayInfo = [];
-    
+
     setMonthCalendar(curYear,curMonth);
-    
+
 });
 
 // Burger
@@ -121,7 +121,7 @@ BGMenu.addEventListener("click", () => {
         modal.classList.add("hide");
         modal.classList.remove("show");
     }
-    
+
 });
 closeModal.addEventListener("click", () => {
     if (modal.classList.contains("show")){
@@ -129,14 +129,6 @@ closeModal.addEventListener("click", () => {
         modal.classList.remove("show");
     }
 });
-
-// modal.addEventListener("click", () => {
-//     if (modal.classList.contains("show")){
-//         modal.classList.add("hide");
-//         modal.classList.remove("show");
-//     }
-    
-// });
 
 function showBurger(burger) {
     if (window.outerWidth <= 1155 ){
@@ -163,7 +155,7 @@ for(let anchor of anchors) {
   anchor.addEventListener("click", function(e) {
     e.preventDefault(); // Предотвратить стандартное поведение ссылок
     const blockID = anchor.getAttribute("href");
-    
+
     // Плавная прокрутка до элемента с id = href у ссылки
     document.querySelector("" + blockID).scrollIntoView({
       behavior: "smooth",
@@ -171,4 +163,4 @@ for(let anchor of anchors) {
     });
   });
 }
-// Scroll
+// Scroll 
