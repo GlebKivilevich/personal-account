@@ -190,8 +190,15 @@ figure
                         justify-content: space-between
                         flex-direction: column
                         height: 300px
+                
+                .btn__block__edit
+                    max-width: 565px
+                    display: flex
+                    flex-wrap: wrap
+                    justify-content: space-between
 
-                .btn__edit__info
+                .btn__edit__info,
+                .btn__save__info
                     margin-top: 30px                    
                     width: 265px
                     height: 65px
@@ -210,7 +217,8 @@ figure
                     transition: 0.44s ease-in
                     
 
-                .btn__edit__info:hover
+                .btn__edit__info:hover,
+                .btn__save__info:hover
                     color: #ffffff
                     background: #6b68ff
 
@@ -569,10 +577,10 @@ figure
 
                         .weekdays
                             display: flex
-                            width: 92%
-                            justify-content: space-between
+                            width: 95%
+                            justify-content: space-evenly
                             color: #222
-                            font-size: 24px
+                            // font-size: 24px
                             text-transform: uppercase
                             
                             .weekdays__li
@@ -581,7 +589,7 @@ figure
                                 color: #696969
 
                         .days
-                            width: 96%
+                            width: 100%
                             display: flex
                             flex-wrap: wrap
                             justify-content: left
@@ -590,10 +598,9 @@ figure
                             
                             li
                                 height: 170px
-                                max-width: 160px
-                                min-width: 40px
+                                max-width: 12.5%
                                 margin-bottom: 5px
-                                // margin-right: 5px
+                                margin-right: 5px
                                 text-align: center
                                 flex: 1 0 calc(100% / 7)
                                 
@@ -671,7 +678,7 @@ figure
                             flex-direction: column
 
                             .concept__headings
-                                font-size: 24px
+                                // font-size: 24px
 
                             .block__bar
                                 display: flex
@@ -699,7 +706,7 @@ figure
                             margin-top: 15px
 
                             .analytics__headings
-                                font-size: 24px
+                                // font-size: 24px
 
                             .block__bar__analytics
                                 display: flex
@@ -727,7 +734,7 @@ figure
                             margin-top: 15px
 
                             .technology__headings
-                                font-size: 24px
+                                // font-size: 24px
 
                             .block__bar__technology
                                 display: flex
@@ -755,7 +762,7 @@ figure
                             margin-top: 15px
 
                             .final__testing__headings
-                                font-size: 24px
+                                // font-size: 24px
 
                             .block__bar__final__testing
                                 display: flex
@@ -828,7 +835,7 @@ figure
                             flex-direction: column
 
                             .concept__headings__two
-                                font-size: 24px
+                                // font-size: 24px
 
                             .block__bar__two
                                 display: flex
@@ -856,7 +863,7 @@ figure
                             margin-top: 15px
 
                             .analytics__headings__two
-                                font-size: 24px
+                                // font-size: 24px
 
                             .block__bar__analytics__two
                                 display: flex
@@ -884,7 +891,7 @@ figure
                             margin-top: 15px
 
                             .technology__headings__two
-                                font-size: 24px
+                                // font-size: 24px
 
                             .block__bar__technology__two
                                 display: flex
@@ -912,7 +919,7 @@ figure
                             margin-top: 15px
 
                             .final__testing__headings__two
-                                font-size: 24px
+                                // font-size: 24px
 
                             .block__bar__final__testing__two
                                 display: flex
@@ -1012,6 +1019,7 @@ figure
                         .left__block__history
                             max-width: 400px
                             color: #222
+                            margin-top: 15px
 
                             .img__text__block__left__block__first
                                 display: flex
@@ -1052,12 +1060,13 @@ figure
                         .center__block__history
                             max-width: 400px
                             color: #222
+                            margin-top: 20px
 
                             .img__text__block__center__block__first
                                 display: flex
                                 align-items: center
                                 font-size: 24px
-                                margin-top: 20px
+                                // margin-top: 20px
 
                                 .text__history__first__center__block
                                     margin-left: 15px
@@ -1092,12 +1101,13 @@ figure
                         .right__block__history
                             max-width: 400px
                             color: #222
+                            margin-top: 20px
 
                             .img__text__block__right__block__first
                                 display: flex
                                 align-items: center
                                 font-size: 24px
-                                margin-top: 20px
+                                // margin-top: 20px
 
                                 .text__history__first__right__block
                                     margin-left: 15px
@@ -1316,6 +1326,9 @@ figure
     .table__info
         width: 360px
 
+    .weekdays
+        font-size: 18px
+
     .headings__meetings__mark,
     .headings__meetings__production,
     .headings__info__logist,
@@ -1397,6 +1410,31 @@ figure
     .lower__block__upcoming__meetings
         margin: 0px 0px 0px 5px
 
+    .concept__headings,
+    .analytics__headings,
+    .technology__headings,
+    .final__testing__headings,
+    .concept__headings__two,
+    .analytics__headings__two,
+    .technology__headings__two,
+    .final__testing__headings__two 
+        font-size: 18px
+
+    .text__history__first__left__block,
+    .text__history__second__left__block,
+    .text__history__three__left__block,
+    .text__history__four__left__block,
+    .text__history__first__center__block,
+    .text__history__second__center__block,
+    .text__history__three__center__block,
+    .text__history__four__center__block,
+    .text__history__first__right__block,
+    .text__history__second__right__block,
+    .text__history__three__right__block,
+    .text__history__four__right__block
+        font-size: 20px
+
+
  
 
 /* полоса прокрутки (скроллбар) */
@@ -1411,6 +1449,15 @@ figure
     background-color: #ffd7a8
     border-radius: 15px
 
+.input__info
+    height: 32px
+    max-width: 320px
+    outline: none
+    background: #fff0
+    border: 2px solid #6b68ff
+    border-radius: 5px
+    padding-left: 5px
+    font-size: 18px
 
 .dn
     display: none
@@ -1436,6 +1483,7 @@ figure
     margin: auto 
     display: flex
     justify-content: end
+    font-size: 22px
 
 .table__head,
 .table__main

@@ -244,7 +244,19 @@ figure {
           flex-direction: column;
   height: 300px;
 }
-.conteiner main .right__block__main .container__right__block .btn__edit__info {
+.conteiner main .right__block__main .container__right__block .btn__block__edit {
+  max-width: 565px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.conteiner main .right__block__main .container__right__block .btn__edit__info,
+.conteiner main .right__block__main .container__right__block .btn__save__info {
   margin-top: 30px;
   width: 265px;
   height: 65px;
@@ -261,7 +273,8 @@ figure {
   -webkit-transition: 0.44s ease-in;
   transition: 0.44s ease-in;
 }
-.conteiner main .right__block__main .container__right__block .btn__edit__info:hover {
+.conteiner main .right__block__main .container__right__block .btn__edit__info:hover,
+.conteiner main .right__block__main .container__right__block .btn__save__info:hover {
   color: #ffffff;
   background: #6b68ff;
 }
@@ -760,12 +773,11 @@ figure {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 92%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  width: 95%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   color: #222;
-  font-size: 24px;
   text-transform: uppercase;
 }
 .conteiner main .right__block__main .calendar .block__calendar__info .calendar__block .weekdays .weekdays__li {
@@ -774,7 +786,7 @@ figure {
   color: #696969;
 }
 .conteiner main .right__block__main .calendar .block__calendar__info .calendar__block .days {
-  width: 96%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -788,9 +800,9 @@ figure {
 }
 .conteiner main .right__block__main .calendar .block__calendar__info .calendar__block .days li {
   height: 170px;
-  max-width: 160px;
-  min-width: 40px;
+  max-width: 12.5%;
   margin-bottom: 5px;
+  margin-right: 5px;
   text-align: center;
   -webkit-box-flex: 1;
       -ms-flex: 1 0 calc(100% / 7);
@@ -898,9 +910,6 @@ figure {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.conteiner main .right__block__main .block__assessment .marketing__block__progress .block__bar__all .concepts__progress__bar .concept__headings {
-  font-size: 24px;
-}
 .conteiner main .right__block__main .block__assessment .marketing__block__progress .block__bar__all .concepts__progress__bar .block__bar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -934,9 +943,6 @@ figure {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: 15px;
-}
-.conteiner main .right__block__main .block__assessment .marketing__block__progress .block__bar__all .analytics__progress__bar .analytics__headings {
-  font-size: 24px;
 }
 .conteiner main .right__block__main .block__assessment .marketing__block__progress .block__bar__all .analytics__progress__bar .block__bar__analytics {
   display: -webkit-box;
@@ -972,9 +978,6 @@ figure {
           flex-direction: column;
   margin-top: 15px;
 }
-.conteiner main .right__block__main .block__assessment .marketing__block__progress .block__bar__all .technology__progress__bar .technology__headings {
-  font-size: 24px;
-}
 .conteiner main .right__block__main .block__assessment .marketing__block__progress .block__bar__all .technology__progress__bar .block__bar__technology {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1008,9 +1011,6 @@ figure {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: 15px;
-}
-.conteiner main .right__block__main .block__assessment .marketing__block__progress .block__bar__all .final__testing__progress__bar .final__testing__headings {
-  font-size: 24px;
 }
 .conteiner main .right__block__main .block__assessment .marketing__block__progress .block__bar__all .final__testing__progress__bar .block__bar__final__testing {
   display: -webkit-box;
@@ -1113,9 +1113,6 @@ figure {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.conteiner main .right__block__main .block__assessment .development__block .block__bar__all__two .concepts__progress__bar__two .concept__headings__two {
-  font-size: 24px;
-}
 .conteiner main .right__block__main .block__assessment .development__block .block__bar__all__two .concepts__progress__bar__two .block__bar__two {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1149,9 +1146,6 @@ figure {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: 15px;
-}
-.conteiner main .right__block__main .block__assessment .development__block .block__bar__all__two .analytics__progress__bar__two .analytics__headings__two {
-  font-size: 24px;
 }
 .conteiner main .right__block__main .block__assessment .development__block .block__bar__all__two .analytics__progress__bar__two .block__bar__analytics__two {
   display: -webkit-box;
@@ -1187,9 +1181,6 @@ figure {
           flex-direction: column;
   margin-top: 15px;
 }
-.conteiner main .right__block__main .block__assessment .development__block .block__bar__all__two .technology__progress__bar__two .technology__headings__two {
-  font-size: 24px;
-}
 .conteiner main .right__block__main .block__assessment .development__block .block__bar__all__two .technology__progress__bar__two .block__bar__technology__two {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1223,9 +1214,6 @@ figure {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: 15px;
-}
-.conteiner main .right__block__main .block__assessment .development__block .block__bar__all__two .final__testing__progress__bar__two .final__testing__headings__two {
-  font-size: 24px;
 }
 .conteiner main .right__block__main .block__assessment .development__block .block__bar__all__two .final__testing__progress__bar__two .block__bar__final__testing__two {
   display: -webkit-box;
@@ -1328,6 +1316,7 @@ figure {
 .conteiner main .right__block__main .block__assessment .history__of__completed__courses__trials .all__block__history .left__block__history {
   max-width: 400px;
   color: #222;
+  margin-top: 15px;
 }
 .conteiner main .right__block__main .block__assessment .history__of__completed__courses__trials .all__block__history .left__block__history .img__text__block__left__block__first {
   display: -webkit-box;
@@ -1383,6 +1372,7 @@ figure {
 .conteiner main .right__block__main .block__assessment .history__of__completed__courses__trials .all__block__history .center__block__history {
   max-width: 400px;
   color: #222;
+  margin-top: 20px;
 }
 .conteiner main .right__block__main .block__assessment .history__of__completed__courses__trials .all__block__history .center__block__history .img__text__block__center__block__first {
   display: -webkit-box;
@@ -1392,7 +1382,6 @@ figure {
       -ms-flex-align: center;
           align-items: center;
   font-size: 24px;
-  margin-top: 20px;
 }
 .conteiner main .right__block__main .block__assessment .history__of__completed__courses__trials .all__block__history .center__block__history .img__text__block__center__block__first .text__history__first__center__block {
   margin-left: 15px;
@@ -1439,6 +1428,7 @@ figure {
 .conteiner main .right__block__main .block__assessment .history__of__completed__courses__trials .all__block__history .right__block__history {
   max-width: 400px;
   color: #222;
+  margin-top: 20px;
 }
 .conteiner main .right__block__main .block__assessment .history__of__completed__courses__trials .all__block__history .right__block__history .img__text__block__right__block__first {
   display: -webkit-box;
@@ -1448,7 +1438,6 @@ figure {
       -ms-flex-align: center;
           align-items: center;
   font-size: 24px;
-  margin-top: 20px;
 }
 .conteiner main .right__block__main .block__assessment .history__of__completed__courses__trials .all__block__history .right__block__history .img__text__block__right__block__first .text__history__first__right__block {
   margin-left: 15px;
@@ -1772,6 +1761,10 @@ figure {
     width: 360px;
   }
 
+  .weekdays {
+    font-size: 18px;
+  }
+
   .headings__meetings__mark,
 .headings__meetings__production,
 .headings__info__logist,
@@ -1880,6 +1873,32 @@ figure {
 .lower__block__upcoming__meetings {
     margin: 0px 0px 0px 5px;
   }
+
+  .concept__headings,
+.analytics__headings,
+.technology__headings,
+.final__testing__headings,
+.concept__headings__two,
+.analytics__headings__two,
+.technology__headings__two,
+.final__testing__headings__two {
+    font-size: 18px;
+  }
+
+  .text__history__first__left__block,
+.text__history__second__left__block,
+.text__history__three__left__block,
+.text__history__four__left__block,
+.text__history__first__center__block,
+.text__history__second__center__block,
+.text__history__three__center__block,
+.text__history__four__center__block,
+.text__history__first__right__block,
+.text__history__second__right__block,
+.text__history__three__right__block,
+.text__history__four__right__block {
+    font-size: 20px;
+  }
 }
 /* полоса прокрутки (скроллбар) */
 ::-webkit-scrollbar {
@@ -1892,6 +1911,17 @@ figure {
 ::-webkit-scrollbar-thumb {
   background-color: #ffd7a8;
   border-radius: 15px;
+}
+
+.input__info {
+  height: 32px;
+  max-width: 320px;
+  outline: none;
+  background: #fff0;
+  border: 2px solid #6b68ff;
+  border-radius: 5px;
+  padding-left: 5px;
+  font-size: 18px;
 }
 
 .dn {
@@ -1930,6 +1960,7 @@ figure {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
+  font-size: 22px;
 }
 
 .table__head,
