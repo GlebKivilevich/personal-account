@@ -1,46 +1,55 @@
 // Обнуление
+@font-face 
+    font-family: 'Proximanova Bold'
+    src: url("../ProximaNova/proximanova_bold.otf")
+
+@font-face 
+    font-family: 'Proximanova Regular'
+    src: url("../ProximaNova/proximanova_regular.ttf")
+
 html    
     box-sizing: border-box
-
+   
 *,
 *::before,
 *::after 
     box-sizing: inherit
-
+   
 body
-    font-family: 'Open Sans', sans-serif
-    font-family: 'Roboto', sans-serif
+    font-family: 'Proximanova Bold', sans-serif
+    font-family: 'Proximanova Regular', sans-serif
     color: #FFF
     font-size: 24px
     margin: 0
     padding: 0
-
+    
     height: 100%
 
 h1, h2, h3, h4, h5, h6 
     margin: 0
     padding: 0  
-
+    
 p 
     margin: 0
     padding: 0
-
+      
 ul, ol 
     margin: 0
     padding: 0
     list-style: none
-
+      
 a 
     color: inherit
     text-decoration: none
-
+    
 img 
     max-width: 100%
     height: auto
-
+    
 figure 
     margin: 0
 // Обнуление
+
 .conteiner
     display: flex
     flex-direction: column
@@ -48,20 +57,20 @@ figure
 
     header 
         background: #394959
-
+        
         .header__block  
             position: fixed
             z-index: 100
             background: #394959     
             display: flex
-            justify-content: space-evenly
+            justify-content: center
             align-items: center
             height: 85px
             width: 100%
             margin: auto
             padding-left: 35px
             padding-right: 35px
-
+            
             .text__header h2
                 font-family: 'Open Sans', sans-serif
                 font-weight: 100
@@ -74,7 +83,7 @@ figure
                 width: 180px
                 align-items: center
 
-
+                
 
             .right__block__header
                 display: block
@@ -85,7 +94,7 @@ figure
 
                 .burger__menu:hover
                     color: #1da5f0
-
+                    
 
 
 
@@ -97,7 +106,7 @@ figure
                     .nav
                         font-size: 22px
                         margin-right: 70px
-
+                        
 
                     .nav__exit
                         border-bottom: 1px solid #fff
@@ -105,7 +114,7 @@ figure
     main
         background: #eeeeee
         display: flex
-
+                    
         .left__block__main
             max-width: 20%
             width: 20%
@@ -118,7 +127,7 @@ figure
                 z-index: 101
                 max-width: 325px
                 top: 12%
-
+                
             .hight__block__main
                 display: flex
                 flex-direction: column
@@ -134,7 +143,7 @@ figure
                         font-size: 18px
                     .school__number
                         font-size: 14px
-
+                
                 .img__photo__acc
                     border: 3px solid #6b68ff
                     border-radius: 50%
@@ -162,7 +171,7 @@ figure
 
                 .info__about__user
                     padding-top: 25px
-
+                    
                     .personal__account
                         // font-size: 38px
                         color: #394959                    
@@ -175,21 +184,29 @@ figure
                     font-family: 'Roboto', sans-serif
                     margin-top: 25px
                     // font-size: 26px
+
                     .left__block__info__user
                         display: flex
                         justify-content: space-between
                         flex-direction: column
                         height: 300px
                         font-weight: 700
-
+    
 
                     .right__block__info__user
                         display: flex
                         justify-content: space-between
                         flex-direction: column
                         height: 300px
+                
+                .btn__block__edit
+                    max-width: 565px
+                    display: flex
+                    flex-wrap: wrap
+                    justify-content: space-between
 
-                .btn__edit__info
+                .btn__edit__info,
+                .btn__save__info
                     margin-top: 30px                    
                     width: 265px
                     height: 65px
@@ -206,16 +223,17 @@ figure
                     border:  none
                     outline: none
                     transition: 0.44s ease-in
+                    
 
-
-                .btn__edit__info:hover
+                .btn__edit__info:hover,
+                .btn__save__info:hover
                     color: #ffffff
                     background: #6b68ff
 
             .info__upcoming__meetings
                 color: #222
                 padding-top: 75px
-
+                
             .upper__block__upcoming__meetings
                 display: flex
                 flex-wrap: wrap
@@ -236,6 +254,7 @@ figure
                         .headings__meetings__mark
                             color: #222222
                             // font-size: 28px
+
                     .info__about__meeting
                         color: #565656
                         // font-size: 25px
@@ -305,6 +324,7 @@ figure
                         .headings__meetings__production
                             color: #222222
                             // font-size: 28px
+
                     .info__about__meeting__production
                         // font-size: 25px
                         margin-bottom: 25px
@@ -335,7 +355,7 @@ figure
                             justify-content: space-between
                             width: 210px
                             align-items: center
-
+                            
                             .img__phone___right__block__upper
                                 width: 36px
                                 height: 36px
@@ -383,9 +403,10 @@ figure
                         max-width: 455px
                         align-items: center
                         margin-bottom: 15px
-
+                        
                         .headings__info__econ
                             // font-size: 30px
+
                     .info__about__economy
                         // font-size: 25px
                         margin-bottom: 25px
@@ -460,6 +481,7 @@ figure
 
                         .headings__info__logist
                             // font-size: 30px
+
                     .info__about__logistics
                         // font-size: 24px
                         color: #565656
@@ -488,7 +510,7 @@ figure
                             justify-content: space-between
                             width: 210px
                             align-items: center
-
+                            
                             .img__phone__logistics
                                 width: 36px
                                 height: 36px
@@ -525,13 +547,13 @@ figure
                                 color: #1D9BF0
                                 border-bottom: 1px solid
 
-
+                        
             .calendar
                 max-width: 1200px
                 // height: 850px
                 padding-top: 50px
                 padding-bottom: 50px
-
+                
                 .headings__timing
                     font-size: 34px
                     color: #394959
@@ -563,34 +585,33 @@ figure
 
                         .weekdays
                             display: flex
-                            width: 92%
-                            justify-content: space-between
+                            width: 95%
+                            justify-content: space-evenly
                             color: #222
-                            font-size: 24px
+                            // font-size: 24px
                             text-transform: uppercase
-
+                            
                             .weekdays__li
                                 max-width: 105px
                                 text-align: center
                                 color: #696969
 
                         .days
-                            width: 96%
+                            width: 100%
                             display: flex
                             flex-wrap: wrap
                             justify-content: left
                             color: #222
                             margin-top: 25px
-
+                            
                             li
                                 height: 170px
-                                max-width: 160px
-                                min-width: 40px
+                                max-width: 12.5%
                                 margin-bottom: 5px
-                                // margin-right: 5px
+                                margin-right: 5px
                                 text-align: center
                                 flex: 1 0 calc(100% / 7)
-
+                                
 
                                 .higth__block__day
                                     height: 55px
@@ -640,7 +661,7 @@ figure
                         .marketing__heading
                             // font-size: 34px
                             color: #222
-
+                    
                     .info__about__marketing
                         max-width: 1045px
                         display: flex
@@ -649,7 +670,7 @@ figure
                         max-width: 1045px
                         margin: auto
                         font-size: 24px
-
+                    
                     .block__bar__all 
                         display: flex
                         flex-direction: column
@@ -665,7 +686,7 @@ figure
                             flex-direction: column
 
                             .concept__headings
-                                font-size: 24px
+                                // font-size: 24px
 
                             .block__bar
                                 display: flex
@@ -676,7 +697,7 @@ figure
                                     background: #C4C4C4
                                     height: 30px
                                     border-radius: 41px
-
+                                    
                                     .proggress__bar__span
                                         display: block
                                         width: 100%
@@ -686,14 +707,14 @@ figure
 
                                 .img__gal
                                     margin-left: 25px
-
+                                        
                         .analytics__progress__bar
                             display: flex
                             flex-direction: column
                             margin-top: 15px
 
                             .analytics__headings
-                                font-size: 24px
+                                // font-size: 24px
 
                             .block__bar__analytics
                                 display: flex
@@ -721,7 +742,7 @@ figure
                             margin-top: 15px
 
                             .technology__headings
-                                font-size: 24px
+                                // font-size: 24px
 
                             .block__bar__technology
                                 display: flex
@@ -749,12 +770,12 @@ figure
                             margin-top: 15px
 
                             .final__testing__headings
-                                font-size: 24px
+                                // font-size: 24px
 
                             .block__bar__final__testing
                                 display: flex
                                 align-items: center
-
+                                
                                 .progress_bar__three
                                     width: 450px    
                                     background: #C4C4C4
@@ -822,7 +843,7 @@ figure
                             flex-direction: column
 
                             .concept__headings__two
-                                font-size: 24px
+                                // font-size: 24px
 
                             .block__bar__two
                                 display: flex
@@ -833,7 +854,7 @@ figure
                                     background: #C4C4C4
                                     height: 30px
                                     border-radius: 41px
-
+                                    
                                     .proggress__bar__span__two
                                         display: block
                                         width: 100%
@@ -843,14 +864,14 @@ figure
 
                                 .img__gal__two
                                     margin-left: 25px
-
+                                        
                         .analytics__progress__bar__two
                             display: flex
                             flex-direction: column
                             margin-top: 15px
 
                             .analytics__headings__two
-                                font-size: 24px
+                                // font-size: 24px
 
                             .block__bar__analytics__two
                                 display: flex
@@ -878,7 +899,7 @@ figure
                             margin-top: 15px
 
                             .technology__headings__two
-                                font-size: 24px
+                                // font-size: 24px
 
                             .block__bar__technology__two
                                 display: flex
@@ -906,12 +927,12 @@ figure
                             margin-top: 15px
 
                             .final__testing__headings__two
-                                font-size: 24px
+                                // font-size: 24px
 
                             .block__bar__final__testing__two
                                 display: flex
                                 align-items: center
-
+                                
                                 .progress_bar__three__two
                                     width: 450px    
                                     background: #C4C4C4
@@ -954,6 +975,7 @@ figure
                                 color: #FFF
                                 font-weight: 100
                                 // font-size: 24px
+
                             .tr__block__second
                                 text-align: center
                                 height: 70px
@@ -993,6 +1015,7 @@ figure
                     .headings__history
                         text-align: center
                         // font-size: 34px
+
                     .all__block__history
                         display: flex
                         // justify-content: space-between
@@ -1004,6 +1027,7 @@ figure
                         .left__block__history
                             max-width: 400px
                             color: #222
+                            margin-top: 15px
 
                             .img__text__block__left__block__first
                                 display: flex
@@ -1021,7 +1045,7 @@ figure
 
                                 .text__history__second__left__block
                                     margin-left: 15px
-
+                            
                             .img__text__block__left__block__three
                                 display: flex
                                 align-items: center
@@ -1044,12 +1068,13 @@ figure
                         .center__block__history
                             max-width: 400px
                             color: #222
+                            margin-top: 20px
 
                             .img__text__block__center__block__first
                                 display: flex
                                 align-items: center
                                 font-size: 24px
-                                margin-top: 20px
+                                // margin-top: 20px
 
                                 .text__history__first__center__block
                                     margin-left: 15px
@@ -1084,12 +1109,13 @@ figure
                         .right__block__history
                             max-width: 400px
                             color: #222
+                            margin-top: 20px
 
                             .img__text__block__right__block__first
                                 display: flex
                                 align-items: center
                                 font-size: 24px
-                                margin-top: 20px
+                                // margin-top: 20px
 
                                 .text__history__first__right__block
                                     margin-left: 15px
@@ -1140,11 +1166,11 @@ figure
                 display: flex
                 flex-direction: column
                 justify-content: flex-end
-
+                
                 .block__address
                     display: flex
                     margin-bottom: 12px 
-
+                    
                     img     
                         width: 22px
                         height: 22px
@@ -1157,7 +1183,7 @@ figure
                     width: 22px
                     height: 22px
                     margin-right: 5px 
-
+            
             .block__email
                 margin-bottom: 12px 
 
@@ -1170,7 +1196,7 @@ figure
                 display: flex
                 align-items: center
                 margin-bottom: 15px 
-
+                
                 img
                     width: 20px
                     height: 20px
@@ -1179,7 +1205,7 @@ figure
             .block__facebook
                 display: flex
                 align-items: center
-
+                
                 img
                     width: 20px
                     height: 20px
@@ -1187,7 +1213,8 @@ figure
 
 .flex-jc-sb
     justify-content: space-between
-
+.flex-jc-c
+    justify-content: center
 .fz-24
     font-size: 24px
 .fz-22
@@ -1242,7 +1269,7 @@ figure
 
 
 @media (max-width: 1155px)
-
+    
     .left__block__main
         display: none
 
@@ -1252,12 +1279,10 @@ figure
     .burger__menu
         display: block
         cursor: pointer
-
+    .header__block 
+        justify-content: space-evenly
 
 @media (max-width: 955px)
-    .burger__menu
-        display: block
-
     .table__info
         display: flex
         justify-content: center
@@ -1276,7 +1301,7 @@ figure
 
     .block__table
         font-size: 16px
-
+        
     .upper__block__upcoming__meetings
         justify-content: start
         margin-left: 25px
@@ -1307,6 +1332,9 @@ figure
         font-size: 13px 
     .table__info
         width: 360px
+
+    .weekdays
+        font-size: 18px
 
     .headings__meetings__mark,
     .headings__meetings__production,
@@ -1389,7 +1417,32 @@ figure
     .lower__block__upcoming__meetings
         margin: 0px 0px 0px 5px
 
+    .concept__headings,
+    .analytics__headings,
+    .technology__headings,
+    .final__testing__headings,
+    .concept__headings__two,
+    .analytics__headings__two,
+    .technology__headings__two,
+    .final__testing__headings__two 
+        font-size: 18px
 
+    .text__history__first__left__block,
+    .text__history__second__left__block,
+    .text__history__three__left__block,
+    .text__history__four__left__block,
+    .text__history__first__center__block,
+    .text__history__second__center__block,
+    .text__history__three__center__block,
+    .text__history__four__center__block,
+    .text__history__first__right__block,
+    .text__history__second__right__block,
+    .text__history__three__right__block,
+    .text__history__four__right__block
+        font-size: 20px
+
+
+ 
 
 /* полоса прокрутки (скроллбар) */
 ::-webkit-scrollbar 
@@ -1403,6 +1456,15 @@ figure
     background-color: #ffd7a8
     border-radius: 15px
 
+.input__info
+    height: 32px
+    max-width: 320px
+    outline: none
+    background: #fff0
+    border: 2px solid #6b68ff
+    border-radius: 5px
+    padding-left: 5px
+    font-size: 18px
 
 .dn
     display: none
@@ -1428,6 +1490,7 @@ figure
     margin: auto 
     display: flex
     justify-content: end
+    font-size: 22px
 
 .table__head,
 .table__main
@@ -1476,7 +1539,7 @@ figure
     padding-left: 25px
     border-radius: 8px
     overflow-y: auto
-
+    
 .navigation__left__block__burger
     display: flex
     flex-direction: column
@@ -1498,3 +1561,6 @@ figure
 
 
 // Modal
+
+
+
